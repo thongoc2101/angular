@@ -1,0 +1,21 @@
+<p>home works!</p>
+<div class="users">
+    <div>{{user.id}}</div>
+    <div>{{user.name | uppercase}} </div>
+    <div>{{user.email | uppercase}}</div>
+    <div>{{user.phoneNumber}}</div>
+</div>
+<div class="edit-user">
+    <div>
+        <label>Edit user name: </label>
+        <input [(ngModel)]="user.name" placeholder="Vui lòng nhập user name">
+    </div>
+</div>
+
+<!-- Hiển thị data từ list và khi click vào đổi màu chữ -->
+<ol class="list-user">
+    <li *ngFor="let itemUser of users" [class.selected]="itemUser === selected" (click)="selectedUser(itemUser)">
+        {{itemUser.name}} - {{itemUser.email}}
+    </li>
+</ol>
+<app-user-detail [selectedUser] = "selected"></app-user-detail>

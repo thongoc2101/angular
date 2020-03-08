@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "demo-angular8": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "demo-angular8"
+    }
+  },
+  "defaultProject": "demo-angular8",
+  "cli": {
+    "analytics": "7cb59945-8beb-4bff-87d6-f1c13b319413"
+  }
 }

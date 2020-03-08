@@ -1,0 +1,13 @@
+<div class="user-detail" *ngIf="selectedUser">
+    <h3>You selected: {{selectedUser.name}}. Detail:</h3>
+    <table style="width: 50%;">
+        <tr>
+            <td>Name:</td>
+            <td><input [(ngModel)]="selectedUser.name" placeholder="name"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input [(ngModel)]="selectedUser.email" placeholder="Email"></td>
+        </tr>
+    </table>
+</div>
